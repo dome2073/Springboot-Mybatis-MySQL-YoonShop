@@ -5,10 +5,11 @@ target/
 !**/src/test/**/target/
 
 ### STS ###
-application.yml
+/src/main/resources/application.yml
 GooglePassword.java
 FtpInfo.java
 ##VERT IMPORTANT##
+.mvn
 .metadata
 bin/
 tmp/
