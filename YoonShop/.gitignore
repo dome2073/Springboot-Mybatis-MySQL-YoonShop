@@ -5,13 +5,20 @@ target/
 !**/src/test/**/target/
 
 ### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
+application.yml
+GooglePassword.java
+FtpInfo.java
+##VERT IMPORTANT##
+.metadata
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.loadpath
+.recommenders
 
 ### IntelliJ IDEA ###
 .idea
@@ -33,4 +40,4 @@ build/
 .vscode/
 
 ## UserInfo ##
-scr/main/resources/application.yml
+**/scr/main/resources/application.yml
