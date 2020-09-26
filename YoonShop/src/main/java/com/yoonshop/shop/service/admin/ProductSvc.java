@@ -12,9 +12,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
-import com.example.shop.model.Product;
-import com.example.shop.repository.ProductRepository;
-import com.example.shop.utils.FtpInfo;
+import com.yoonshop.shop.model.Product;
+import com.yoonshop.shop.repository.ProductRepository;
+import com.yoonshop.shop.utils.FtpInfo;
 
 @Service
 public class ProductSvc {

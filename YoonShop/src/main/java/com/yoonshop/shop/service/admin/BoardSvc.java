@@ -5,9 +5,9 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.example.shop.model.Board;
-import com.example.shop.repository.BoardRepository;
-import com.example.shop.utils.Util;
+import com.yoonshop.shop.model.Board;
+import com.yoonshop.shop.repository.BoardRepository;
+import com.yoonshop.shop.utils.Util;
 
 @Service
 public class BoardSvc {

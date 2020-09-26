@@ -8,8 +8,8 @@ import java.util.Map;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.example.shop.model.Order;
-import com.example.shop.repository.OrderRepository;
+import com.yoonshop.shop.model.Order;
+import com.yoonshop.shop.repository.OrderRepository;
 
 @Service
 public class OrderSvc {

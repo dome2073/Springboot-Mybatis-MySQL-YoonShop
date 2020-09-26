@@ -15,10 +15,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.example.shop.model.Order;
-import com.example.shop.security.UserDetail;
-import com.example.shop.service.OrderService;
-import com.example.shop.utils.Util;
+import com.yoonshop.shop.model.Order;
+import com.yoonshop.shop.security.UserDetail;
+import com.yoonshop.shop.service.OrderService;
+import com.yoonshop.shop.utils.Util;
 
 @Controller
 @RequestMapping("/order")

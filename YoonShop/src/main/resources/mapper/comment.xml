@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yoonshop.shop.repository.CommentRepository">
+
+	<!-- ADMIN -->
+	<select id="commentList" resultType="com.yoonshop.shop.model.Comment">
+	SELECT com.*, @ROWNUM := @ROWNUM + 1 as 'rowNum'
+	FROM (SELECT c.*, ifnull(u.email, '탈퇴한 유저') as email
+			, CASE WHEN ifnull(cAnswer.content, 'NONE') = 'NONE' THEN '답변대기' ELSE '답변완료' END as 'answerContent'
+		FROM comment c
+		LEFT OUTER JOIN user u
+			ON c.insId = u.id
+		LEFT OUTER JOIN comment cAnswer
+			ON c.id = cAnswer.parentId
+			AND cAnswer.delId is null and cAnswer.delDt is null
+		WHERE c.delId is null AND c.delDt is null
+			AND c.parentId = 0
+		ORDER BY c.id
+		) AS com
+    WHERE (@ROWNUM:=0)=0
+	ORDER BY rowNum desc
+	</select>
+	
+	<select id="commentView" resultType="com.yoonshop.shop.model.Comment">
+		SELECT c.*, ifnull(u.email, '탈퇴한 유저') as email, p.productNm, cAnswer.content as 'answerContent', cAnswer.id as 'answerId'
+		FROM comment c
+		LEFT OUTER JOIN user u
+			ON c.insId = u.id
+		INNER JOIN product p
+			ON c.productId = p.id
+		LEFT OUTER JOIN comment cAnswer
+			ON c.id = cAnswer.parentId
+			AND cAnswer.delId is null and cAnswer.delDt is null
+		WHERE c.delId is null AND c.delDt is null
+			AND c.parentId = 0 AND c.id = #{id}
+	</select>
+	
+	<update id="commentDelete">
+		UPDATE comment SET delId = #{delId}, delDt = now() WHERE id = #{id}
+	</update>
+	
+	<insert id="commentWrite">
+		INSERT INTO comment VALUES(null, #{content}, #{rating}, #{productId}, #{parentId}, #{insId}, now(), null, null)
+	</insert>
+	
+  	<!-- USER -->
+	<!-- USER -->
+	<select id="productUserCommentList" resultType="com.yoonshop.shop.model.Comment">
+		SELECT c.*, u.email as email 
+		FROM comment c 
+		LEFT OUTER JOIN user u ON c.insId = u.id 
+		WHERE productId = #{productId} AND parentId = 0 AND delId is null 
+		ORDER BY id DESC 
+		LIMIT #{page}, 5
+	</select>
+	
+	<select id="productUserCommentListCount" resultType="com.yoonshop.shop.model.Comment">
+		SELECT c.*, u.email as email 
+		FROM comment c 
+		LEFT OUTER JOIN user u ON c.insId = u.id 
+		WHERE productId = #{productId} AND parentId = 0 AND delId is null 
+		ORDER BY id DESC
+	</select>
+	
+	
+	<select id="productAdminReplyList" resultType="com.yoonshop.shop.model.Comment">
+		SELECT c.*,u.email FROM comment c JOIN user u ON c.insId=u.id WHERE c.parentId=#{commentId} and delId is null;
+	</select>
+	
+	
+	
+	
+</mapper>

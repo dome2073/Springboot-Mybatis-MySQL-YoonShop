@@ -11,9 +11,9 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.example.shop.model.Product;
-import com.example.shop.security.UserDetail;
-import com.example.shop.service.ProductService;
+import com.yoonshop.shop.model.Product;
+import com.yoonshop.shop.security.UserDetail;
+import com.yoonshop.shop.service.ProductService;
 import com.google.gson.Gson;
 
 @Controller

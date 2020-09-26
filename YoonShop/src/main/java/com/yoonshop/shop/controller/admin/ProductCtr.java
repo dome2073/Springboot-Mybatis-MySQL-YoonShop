@@ -14,9 +14,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
 
-import com.example.shop.model.Product;
-import com.example.shop.security.UserDetail;
-import com.example.shop.service.admin.ProductSvc;
+import com.yoonshop.shop.model.Product;
+import com.yoonshop.shop.security.UserDetail;
+import com.yoonshop.shop.service.admin.ProductSvc;
 
 @Controller
 @RequestMapping("/admin/product")

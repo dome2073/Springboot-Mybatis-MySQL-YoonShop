@@ -12,9 +12,9 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.example.shop.model.Code;
-import com.example.shop.security.UserDetail;
-import com.example.shop.service.admin.CodeSvc;
+import com.yoonshop.shop.model.Code;
+import com.yoonshop.shop.security.UserDetail;
+import com.yoonshop.shop.service.admin.CodeSvc;
 
 @Controller
 public class CodeCtr {

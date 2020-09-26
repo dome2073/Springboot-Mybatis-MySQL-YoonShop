@@ -7,8 +7,8 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.example.shop.model.Coupon;
-import com.example.shop.repository.CouponRepository;
+import com.yoonshop.shop.model.Coupon;
+import com.yoonshop.shop.repository.CouponRepository;
 
 @Service
 public class CouponSvc {

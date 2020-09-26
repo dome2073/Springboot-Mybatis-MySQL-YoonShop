@@ -8,8 +8,8 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.example.shop.model.Product;
-import com.example.shop.service.SaleService;
+import com.yoonshop.shop.model.Product;
+import com.yoonshop.shop.service.SaleService;
 
 @Controller
 @RequestMapping("/sale")

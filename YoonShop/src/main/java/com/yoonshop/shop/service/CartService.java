@@ -5,8 +5,8 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.example.shop.model.Cart;
-import com.example.shop.repository.CartRepository;
+import com.yoonshop.shop.model.Cart;
+import com.yoonshop.shop.repository.CartRepository;
 
 @Service
 public class CartService {

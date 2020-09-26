@@ -9,9 +9,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.shop.model.Comment;
-import com.example.shop.security.UserDetail;
-import com.example.shop.service.CommentService;
+import com.yoonshop.shop.model.Comment;
+import com.yoonshop.shop.security.UserDetail;
+import com.yoonshop.shop.service.CommentService;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 

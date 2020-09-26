@@ -6,9 +6,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import com.example.shop.model.Comment;
-import com.example.shop.repository.CommentRepository;
-import com.example.shop.utils.Util;
+import com.yoonshop.shop.model.Comment;
+import com.yoonshop.shop.repository.CommentRepository;
+import com.yoonshop.shop.utils.Util;
 
 @Service
 public class CommentService {

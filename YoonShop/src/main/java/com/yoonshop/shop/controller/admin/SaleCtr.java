@@ -13,11 +13,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.example.shop.model.Product;
-import com.example.shop.model.Sale;
-import com.example.shop.security.UserDetail;
-import com.example.shop.service.admin.SaleSvc;
-import com.example.shop.utils.Script;
+import com.yoonshop.shop.model.Product;
+import com.yoonshop.shop.model.Sale;
+import com.yoonshop.shop.security.UserDetail;
+import com.yoonshop.shop.service.admin.SaleSvc;
+import com.yoonshop.shop.utils.Script;
 import com.google.gson.Gson;
 
 @Controller

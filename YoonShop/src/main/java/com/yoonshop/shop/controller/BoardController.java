@@ -10,8 +10,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.example.shop.model.Board;
-import com.example.shop.service.BoardService;
+import com.yoonshop.shop.model.Board;
+import com.yoonshop.shop.service.BoardService;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 

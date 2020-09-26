@@ -2,9 +2,9 @@ package com.yoonshop.shop.repository;
 
 import java.util.List;
 
-import com.example.shop.model.Coupon;
-import com.example.shop.model.Order;
-import com.example.shop.model.Sale;
+import com.yoonshop.shop.model.Coupon;
+import com.yoonshop.shop.model.Order;
+import com.yoonshop.shop.model.Sale;
 
 public interface OrderRepository {
 	//ADMIN

@@ -5,12 +5,12 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.example.shop.model.Coupon;
-import com.example.shop.model.Order;
-import com.example.shop.model.Sale;
-import com.example.shop.repository.OrderRepository;
-import com.example.shop.utils.Util;
-
+import com.yoonshop.shop.model.Coupon;
+import com.yoonshop.shop.model.Order;
+import com.yoonshop.shop.model.Sale;
+import com.yoonshop.shop.repository.OrderRepository;
+import com.yoonshop.shop.utils.Util;
+           
 @Service
 public class OrderService {
 

@@ -14,10 +14,10 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.example.shop.model.Comment;
-import com.example.shop.security.UserDetail;
-import com.example.shop.service.admin.CommentSvc;
-import com.example.shop.utils.Script;
+import com.yoonshop.shop.model.Comment;
+import com.yoonshop.shop.security.UserDetail;
+import com.yoonshop.shop.service.admin.CommentSvc;
+import com.yoonshop.shop.utils.Script;
 
 @Controller
 @RequestMapping("/admin/comment")

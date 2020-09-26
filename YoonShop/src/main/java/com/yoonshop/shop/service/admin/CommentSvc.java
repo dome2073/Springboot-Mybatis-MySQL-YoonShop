@@ -5,8 +5,8 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.example.shop.model.Comment;
-import com.example.shop.repository.CommentRepository;
+import com.yoonshop.shop.model.Comment;
+import com.yoonshop.shop.repository.CommentRepository;
 
 @Service
 public class CommentSvc {

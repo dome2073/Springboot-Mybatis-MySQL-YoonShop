@@ -2,7 +2,7 @@ package com.yoonshop.shop.repository;
 
 import java.util.List;
 
-import com.example.shop.model.Coupon;
+import com.yoonshop.shop.model.Coupon;
 
 public interface CouponRepository{
 	//ADMIN

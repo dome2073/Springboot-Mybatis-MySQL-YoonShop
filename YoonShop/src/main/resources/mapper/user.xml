@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.example.shop.repository.UserRepository">
+<mapper namespace="com.yoonshop.shop.repository.UserRepository">
 
 	<!-- ADMIN -->
 	<select id="userCheck" resultType="Integer">
 		SELECT COUNT(*) FROM user WHERE delDt NOT BETWEEN DATE_ADD(now(), INTERVAL -7 DAY) and now()
 	</select>
 	
-	<select id="findAll" resultType="com.example.shop.model.User">
+	<select id="findAll" resultType="com.yoonshop.shop.model.User">
 		SELECT email, addr, phone, authFg, insDt 
 		FROM user
 		WHERE delDt is null AND roleCd not in('99')
@@ -23,14 +23,14 @@
 		SELECT COUNT(*) FROM user WHERE email = #{email}
 	</select>
 	
-	<select id="findByEmail" resultType="com.example.shop.model.User">
+	<select id="findByEmail" resultType="com.yoonshop.shop.model.User">
 		SELECT u.*, c.codeNm as 'roleNm'
 		FROM user u
 		INNER JOIN code c ON u.roleCd = c.code AND c.codeGbn = 'ROLE'
 		WHERE email = #{email} AND delDt is null AND authFg='Y'
 	</select>
 
-	<select id="findByEmailAuth" resultType="com.example.shop.model.User">
+	<select id="findByEmailAuth" resultType="com.yoonshop.shop.model.User">
 		SELECT u.*, c.codeNm as 'roleNm'
 		FROM user u
 		INNER JOIN code c ON u.roleCd = c.code AND c.codeGbn = 'ROLE'

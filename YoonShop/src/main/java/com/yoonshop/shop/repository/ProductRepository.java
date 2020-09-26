@@ -2,7 +2,7 @@ package com.yoonshop.shop.repository;
 
 import java.util.List;
 
-import com.example.shop.model.Product;
+import com.yoonshop.shop.model.Product;
 
 public interface ProductRepository {
 	//ADMIN

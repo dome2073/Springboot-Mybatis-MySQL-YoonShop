@@ -5,9 +5,9 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.example.shop.model.Product;
-import com.example.shop.model.Sale;
-import com.example.shop.repository.SaleRepository;
+import com.yoonshop.shop.model.Product;
+import com.yoonshop.shop.model.Sale;
+import com.yoonshop.shop.repository.SaleRepository;
 
 @Service
 public class SaleSvc {

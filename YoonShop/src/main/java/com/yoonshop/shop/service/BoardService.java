@@ -5,8 +5,8 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.example.shop.model.Board;
-import com.example.shop.repository.BoardRepository;
+import com.yoonshop.shop.model.Board;
+import com.yoonshop.shop.repository.BoardRepository;
 
 @Service
 public class BoardService {

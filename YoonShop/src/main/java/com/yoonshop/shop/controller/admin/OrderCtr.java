@@ -12,8 +12,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.example.shop.model.Order;
-import com.example.shop.service.admin.OrderSvc;
+import com.yoonshop.shop.model.Order;
+import com.yoonshop.shop.service.admin.OrderSvc;
 
 @Controller
 @RequestMapping("/admin/order")
