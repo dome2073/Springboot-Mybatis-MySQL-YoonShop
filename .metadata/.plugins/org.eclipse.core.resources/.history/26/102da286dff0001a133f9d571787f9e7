@@ -1,0 +1,28 @@
+
+server :
+  port : 8080
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/views/ 
+      suffix: .jsp
+      
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url : jdbc:mysql://localhost:3306/shop?serverTimezone=Asia/Seoul
+    username: root
+    password : dhdlfdl123
+    
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: dyjung2073@gmail.com
+    password: dhdlfdl123
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+    
+    

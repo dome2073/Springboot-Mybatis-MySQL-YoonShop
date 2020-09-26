@@ -1,0 +1,10 @@
+package com.example.shop.utils;
+
+public class GooglePassword {
+
+	public static String GOOGLEPASSWORD() {
+		// TODO Auto-generated method stub
+		return "rbiqaasmotpoegih";
+	}
+
+}

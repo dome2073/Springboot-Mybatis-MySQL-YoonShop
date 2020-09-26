@@ -1,0 +1,15 @@
+package com.example.shop.utils;
+
+public class FtpInfo {
+
+	public static String FTPID() {
+		// TODO Auto-generated method stub
+		return "";
+	}
+
+	public static String FTPPASSWORD() {
+		// TODO Auto-generated method stub
+		return "";
+	}
+
+}

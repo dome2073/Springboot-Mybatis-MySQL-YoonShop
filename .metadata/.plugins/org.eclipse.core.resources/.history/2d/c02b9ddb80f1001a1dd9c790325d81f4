@@ -1,0 +1,10 @@
+package com.example.shop.utils;
+
+public class FtpInfo {
+
+	public static String FTPID() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

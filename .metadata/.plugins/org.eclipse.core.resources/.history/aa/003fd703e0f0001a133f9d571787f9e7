@@ -1,0 +1,15 @@
+package com.example.shop.utils;
+
+import javax.mail.Authenticator;
+import javax.mail.PasswordAuthentication;
+
+public class Gmail extends Authenticator{
+	@Override
+	protected PasswordAuthentication getPasswordAuthentication() {
+		//여기까지?
+		System.out.println("여기까지1");
+		return new PasswordAuthentication("dyjung2073@gmail.com", "rbiqaasmotpoegih");
+		
+//		return new PasswordAuthentication("dyjung2073@gmail.com", GooglePassword.GOOGLEPASSWORD());
+	}
+}

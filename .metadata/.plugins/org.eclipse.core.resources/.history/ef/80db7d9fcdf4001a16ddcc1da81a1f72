@@ -1,0 +1,9 @@
+package com.yoonshop.shop.controller.admin;
+
+import org.springframework.stereotype.Controller;
+
+@Controller
+@RequestMapping("/admin/main")
+public class MainController {
+
+}
