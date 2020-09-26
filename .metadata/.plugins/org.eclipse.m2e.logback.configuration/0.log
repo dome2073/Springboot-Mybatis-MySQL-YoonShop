@@ -4451,3 +4451,8 @@ Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: in comment 
 2020-09-26 21:40:04,390 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
 2020-09-26 21:40:04,644 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1947 resources
 2020-09-26 21:40:04,987 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-09-26 21:40:04,987 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\¡§¥Î¿±\Documents\workspace-spring-tool-suite-4-4.7.2.RELEASE\YoonShop\src\test\resources
+2020-09-26 21:41:18,824 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-09-26 21:41:19,082 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-09-26 21:41:19,339 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1947 resources
+2020-09-26 21:41:19,688 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
