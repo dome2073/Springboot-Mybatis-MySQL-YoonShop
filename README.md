@@ -32,6 +32,7 @@
 
 ### ERD
 ![ERD](https://user-images.githubusercontent.com/38512972/104403099-1c6b0680-559b-11eb-8309-820f2e3e7aa5.png)
+
 탈퇴한 회원의 구매 정보나 리뷰 또는 삭제된 상품에 관한 정보를 모두 남기기 위하여 외래키로 식별하지 않았습니다.
 
 ### 특징적 기술 Key Features
