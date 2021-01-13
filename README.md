@@ -61,7 +61,7 @@
 - [정대윤](https://github.com/dome2073 "정대윤")
 
 ### 라이센스 License
-우리의 프로젝트는 [MIT License](https://github.com/Uniz-Project/Uniz-Service/blob/main/LICENSE "MIT")를 따르고 있습니다.
+우리의 프로젝트는 [MIT License](https://github.com/dome2073/Springboot-Mybatis-MySQL-YoonShop/blob/master/LICENSE)를 따르고 있습니다.
 
 ## 연락 Contact
 
